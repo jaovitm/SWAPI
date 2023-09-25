@@ -1,12 +1,12 @@
+import { getPeople, getFilms, getPlanets, getSpaceships, getSpecies, getVehicles } from './apiRequest.js';
+
+
 $(function(){
-    getPeople()
+    getPeople();
+    getFilms();
+    getPlanets();
+    getSpaceships();
+    getSpecies();
+    getVehicles();
 });
 
-const getPeople = async () =>{
-    $.ajax({
-        url: "https://swapi.dev/api/people",
-        success: function( result ) {
-          console.log(result)
-        }
-      });
-}
