@@ -1,0 +1,36 @@
+body {
+    background-color: #111;
+    color: #fff; /* Defini a cor do texto para branco */
+    font-family: Arial, sans-serif; /* Escolhi uma fonte padrão */
+}
+
+header{
+    height: 10vh;
+}
+
+#scrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    background-color: transparent;
+    color: #fff;
+    
+}
+
+#hero {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../content/hero/darthvader.png'), url('../content/hero/yoda.png');
+    background-size: 500px, 500px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 112% 112%, 0% 140%;
+    z-index: -1;
+}
+
+#itens{
+    padding-top: 20vh;
+    width: 100vw;
+    height: 100vh;
+}
