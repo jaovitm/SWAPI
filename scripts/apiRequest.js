@@ -1,5 +1,7 @@
 export const getPeople = async (callback) => {
-  
+
+  sessionStorage.removeItem('people');
+
   try {
     let nextUrl = "https://swapi.dev/api/people";
     while (nextUrl !== null) {
@@ -22,14 +24,13 @@ export const getPeople = async (callback) => {
 
 };
 
-
-
 export const getPlanets = async (callback) => {
+
+  sessionStorage.removeItem('planets');
 
   try {
     let nextUrl = "https://swapi.dev/api/planets";
     while (nextUrl !== null) {
-      console.log('ta rolando')
       const response = await fetch(nextUrl);
       const data = await response.json();
 
@@ -51,10 +52,11 @@ export const getPlanets = async (callback) => {
 
 export const getSpaceships = async (callback) => {
 
+  sessionStorage.removeItem('starships');
+
   try {
     let nextUrl = "https://swapi.dev/api/starships";
     while (nextUrl !== null) {
-      console.log('ta rolando')
       const response = await fetch(nextUrl);
       const data = await response.json();
 
@@ -76,10 +78,12 @@ export const getSpaceships = async (callback) => {
 
 export const getVehicles = async (callback) => {
 
+  sessionStorage.removeItem('vehicles');
+
+
   try {
     let nextUrl = "https://swapi.dev/api/vehicles";
     while (nextUrl !== null) {
-      console.log('ta rolando')
       const response = await fetch(nextUrl);
       const data = await response.json();
 
@@ -101,10 +105,11 @@ export const getVehicles = async (callback) => {
 
 export const getFilms = async (callback) => {
 
+  sessionStorage.removeItem('films');
+
   try {
     let nextUrl = "https://swapi.dev/api/films";
     while (nextUrl !== null) {
-      console.log('ta rolando')
       const response = await fetch(nextUrl);
       const data = await response.json();
 
@@ -126,10 +131,12 @@ export const getFilms = async (callback) => {
 
 export const getSpecies = async (callback) => {
 
+  sessionStorage.removeItem('species');
+
+
   try {
     let nextUrl = "https://swapi.dev/api/species";
     while (nextUrl !== null) {
-      console.log('ta rolando')
       const response = await fetch(nextUrl);
       const data = await response.json();
 
