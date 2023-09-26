@@ -29,8 +29,22 @@ header{
     z-index: -1;
 }
 
-#itens{
+#itens, #dataTable{
     padding-top: 20vh;
     width: 100vw;
     height: 100vh;
 }
+
+table tr{
+    border-bottom: 1px solid whitesmoke;
+}
+
+#tableContainer{
+    width: 80vw;
+    height: 60vh;
+}
+
+
+.black-bg {
+    background-color: rgba(0, 0, 0, 0.299) !important; /* !important é usado para garantir que a regra seja aplicada */
+  }
