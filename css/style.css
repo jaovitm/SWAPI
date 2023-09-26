@@ -48,3 +48,25 @@ table tr{
 .black-bg {
     background-color: rgba(0, 0, 0, 0.299) !important; /* !important é usado para garantir que a regra seja aplicada */
   }
+
+
+@media screen and (max-width:600px) {
+
+    #itens, #dataTable{
+        
+        height: auto;
+    }
+
+    #hero {
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../content/hero/darthvader.png'), url('../content/hero/yoda.png');
+        background-size: 300px, 300px;
+        background-repeat: no-repeat, no-repeat;
+        background-position: 100% 100%, 0% 110%;
+        z-index: -1;
+    }
+
+}

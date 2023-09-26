@@ -149,11 +149,11 @@ export const filmsModal = (char) => {
         html:
             `<table class="table text-dark text-start">
                 <tr>
-                    <td>ID do Filme</td>
-                    <td>${char.episode_id}</td>
+                    <td>ID</td>
+                    <td>Texto de Abertura</td>
                 </tr> 
                 <tr>
-                    <td>Abertura</td>
+                    <td>${char.episode_id}</td>
                     <td>${char.opening_crawl}</td>
                 </tr>            
            </table>`,
